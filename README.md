@@ -5,4 +5,5 @@ open console (command line). enter -> git clone https://github.com/adityakumar13
 
 2) Now you have code base. Now you need to build it. Build command: mvn clean install
 
-3) Now run the java application by ->  mvn exec:java -Dexec.mainClass=com.neobank.OrderManagement.OrderManagementApplication 
+3) Now run the java application by ->  
+mvn exec:java -Dexec.mainClass=com.neobank.OrderManagement.OrderManagementApplication 
