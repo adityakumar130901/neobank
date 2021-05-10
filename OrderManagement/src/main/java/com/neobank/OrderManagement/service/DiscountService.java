@@ -20,10 +20,7 @@ public class DiscountService {
 		
 		Discount discount = itemDao.fetchItemDiscount(item);
 		
-		if (item.getId() == "001")
-			System.out.println("Rolex Calculation");
-		
-		while (discount != null && quantity !=0 && quantity % discount.getQuantity() == 0) {
+		while (discount != null && quantity !=0 && quantity >= discount.getQuantity()) {
 			price = price + discount.getPrice();
 			quantity = quantity - discount.getQuantity();
 		}
