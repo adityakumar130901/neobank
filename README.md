@@ -8,3 +8,19 @@ To get the project started you need to do these steps
 
 3) Now run the java application by
 ### mvn exec:java -Dexec.mainClass=com.neobank.OrderManagement.OrderManagementApplication 
+
+### Sample Request
+curl --location --request POST 'http://localhost:8080/check' \
+--header 'Accept: application/json' \
+--header 'Content-Type: application/json' \
+--data-raw '[
+ "001",
+ "001",
+ "001",
+ "001",
+ "001",
+ "001"
+]'
+
+### Sample Respone
+{"price":400}
